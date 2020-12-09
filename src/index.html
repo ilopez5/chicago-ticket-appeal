@@ -1,33 +1,104 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Take It To The Streets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Take It To The Streets | Home</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- custom styling -->
+	<link rel="icon" href="assets/images/logo-white.png" type="image/icon type">
+	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-	<h1>Take It To The Streets</h1>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="defenses.html">Allowed defenses</a></li>
-			<li><a href="preparation.html">Preparing for your appeal</a></li>
-			<li><a href="resources.html">Other resources</a></li>
-		</ul>
+<body class="wrapper">
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="./assets/images/logo-white.png" alt="hand holding pencil logo" />
+				Take It to the Streets
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="defenses.html">Allowed Defenses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="preparation.html">Preparing Your Appeal</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="resources.html">Resources</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</nav>
-	<h2>Tickets in the 25th ward</h2>
-	<img src="assets/images/25thward_boundaries.png" alt="map of the 25th ward boundaries">
 
-	<!--  Statistics about 25th ward tickets here  -->
+	<main class="container">
+		<h1 class="hidden">Home</h1>
+		<h2>Tickets in the 25th ward</h2>
+		<img src="assets/images/25thward_boundaries.png" alt="map of the 25th ward boundaries">
 
+		<!--  Statistics about 25th ward tickets here  -->
 
+		<h2>What to do about your ticket</h2>
+		<p>Appeal! Only 9% of tickets issued in the 25th ward between Jan. 1, 2013 and Dec. 31, 2017 were contested. However, 60% of those appeals resulted in the ticket being thrown out.</p>
+		<p>There is no fee to request an administrative hearing, and no penalty if you lose. Once you request a hearing, you will receive a week during which to appear at a hearing facility. You can go anytime during that week, based on your availability.</p>
 
-	<h2>What to do about your ticket</h2>
-	<p>Appeal! Only 9% of tickets issued in the 25th ward between Jan. 1, 2013 and Dec. 31, 2017 were contested. However, 60% of those appeals resulted in the ticket being thrown out.</p>
-	<p>There is no fee to request an administrative hearing, and no penalty if you lose. Once you request a hearing, you will receive a week during which to appear at a hearing facility. You can go anytime during that week, based on your availability.</p>
-	<p>Our site contains information to help you understand the appeal process, prepare your case, and contest your ticket confidently. Go to our <a href="defenses.html">allowable defenses</a> page to learn how you can defend yourself. Use our <a href="prepare.html">preparation</a> page to build your case and prepare your evidence. You can also view a list of other helpful sites in our <a href="resources.html">resources</a></p>
+	</main>
 
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-center">
+				<!-- logo -->
+				<section id="logo" class="col-md-2">
+					<h5 class="hidden">logo</h5>
+					<a href="index.html">
+						<img src="./assets/images/logo-white.png" alt="hand holding pencil logo" />
+					</a>
+				</section>
+
+				<!-- site links -->
+				<section id="site-pages" class="col-md-3">
+					<h5>Site links</h5>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="defenses.html">Allowed Defenses</a></li>
+						<li><a href="preparation.html">Preparing Your Appeal</a></li>
+						<li><a href="resources.html">Resources</a></li>
+					</ul>
+				</section>
+
+				<!-- resource links -->
+				<section id="resources" class="col-md-3">
+					<h5>Resources</h5>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="row">
+				<!-- copyright -->
+				<section id="copyright" class="col-md-12">
+					<h5 class="hidden">copyright</h5>
+					<p>&copy; 2020 <a href="index.html">Take It to the Streets</a></p>
+				</section>
+			</div>
+		</div>
+	</footer>
 </body>
+</html>
