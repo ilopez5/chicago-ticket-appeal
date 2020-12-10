@@ -1,0 +1,26 @@
+---
+title: "Take It to the Streets "
+output: html_notebook
+---
+
+This dataset provides details on all parking and vehicle compliance tickets issued in Chicago from January 1, 1996 to May 14, 2018. The file "chicago_parking_tickets.csv" was obtained from ProPublica's data stores at https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data. The following R code filters out the violation description and appeal result for the 5 most common parking/compliance violations in Ward 25 in this dataset.
+
+```{r}
+library(data.table)
+library(dplyr)
+parking_tickets <- fread("chicago_parking_tickets.csv",select=c(8,9,21,27),data.table = FALSE )
+ward25_parking <- dt %>% filter(ward == 25)
+
+# find the top 5 violations
+viol_desc <- table(ward25_parking$violation_description)
+most_common_viol <- as.data.frame(sort(viol_desc,decreasing = TRUE)[1:5])
+
+# only tickets with one of the 5 most common violation types
+ward25_common_parking <- ward25 %>% filter(violation_description %in% most_common_viol$Var1)
+# replace blank cells with "not contested" to make charts in Google Sheets easier
+ward25_common_parking$hearing_disposition <- sub("^$","not contested", ward25_common_parking$hearing_disposition)
+
+## take out columns we don't need (violation code and ward)
+ward25_common_parking <- ward25_common_parking %>% select(-violation_code,-ward)
+write.csv(ward25_common_parking,"ward25_parking_tickets.csv")
+```
