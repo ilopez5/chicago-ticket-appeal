@@ -1,0 +1,98 @@
+/* variables */
+:root {
+	/* logo colors */
+	--viridian-green: #119DA4;
+	--solid-pink: #8E3B46;
+	--rich-black: #080B0D;
+	--gunmetal: #1F2D33;
+	--honeydew: #F1FAEE;
+	--black-shadows: #eed9d8;
+	/* other */
+	--background: white;
+	--foreground: black;
+}
+
+html, body {
+	height: 100%;
+}
+
+/* navbar styling */
+nav.navbar {
+	background-color: var(--rich-black);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+}
+nav a img {
+	display: inline;
+	width: 50px;
+}
+
+/* footer styling */
+footer {
+	position: relative;
+	width: 100%;
+	bottom: 0%;
+	background-color: var(--gunmetal);
+	color: white;
+	padding: 20px 20px;
+	margin-top: 20px;
+}
+footer section,
+footer section div,
+footer img {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+footer img {
+	margin-right: 20px;
+	width: 175px;
+}
+footer section#copyright {
+	text-align: center;
+}
+footer h5 {
+	color: var(--black-shadows);
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	color: var(--viridian-green);
+}
+footer section ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+/* color */
+/* font */
+/* spacing */
+
+/* accessibility */
+.hidden {
+	border: 0;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.hidden:active, .hidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
