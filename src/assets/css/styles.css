@@ -68,7 +68,7 @@ footer section ul {
 
 /* color */
 a {
-	color: var(--solid-pink)
+	color: var(--solid-pink);
 }
 a:hover {
 	color: #a04c56;
@@ -84,6 +84,10 @@ h2 {
 ol, ul, a, p {
 	font-family: 'Lora', serif;
 	font-size: 1.2rem;
+}
+p.citation,
+p.citation a {
+	font-size: 0.8rem;
 }
 nav a,
 nav p,
@@ -129,15 +133,13 @@ section ol {
 }
 
 /* index.html */
-div.grayscale {
+div.image {
 	position: relative;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
 	background-color: white;
 	padding-top: 10px;
 	text-align: right;
 }
-div.grayscale img {
+div.image img {
 	width: 300px;
 }
 
