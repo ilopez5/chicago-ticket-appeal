@@ -8,6 +8,9 @@
 
 	<!-- bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 	<!-- custom styling -->
 	<link rel="icon" href="assets/images/logo-white.png" type="image/icon type">
 	<link rel="stylesheet" href="assets/css/styles.css">
@@ -45,23 +48,43 @@
 
 	<main class="container">
 		<h1 class="hidden">Home</h1>
-		<h2>How do parking violations affect me?</h2>
-		<p>Parking violations and their associated fines cost Chicagoans thousands of dollars every year.</p>
-		<!-- <img src="assets/images/ward-25-boundary-color.png" alt="map of the 25th ward boundaries"> -->
 
-		<!--  Statistics about 25th ward tickets here  -->
+		<!-- how do these tickets affect chicagoans -->
+		<section id="what-are-effects" class="row">
+			<div class="col-md-8">
+				<h2>How do parking violations affect me?</h2>
+				<p>Parking violations and their associated fines cost Chicagoans thousands of dollars every year.</p>
+				<p>15% of tickets issued in this ward between Jan. 1, 2013, and Dec. 31, 2017, were tied to a notice from the city of a pending vehicle seizure or license suspension on the date the data was extracted. Two unpaid tickets can trigger a boot on a vehicle. The city can initiate license suspensions after motorists accumulate 10 unpaid parking tickets or five unpaid traffic camera tickets.</p>
+				<p>As is evident, tickets can easily become a real and expensive problem.</p>
+			</div>
+			<div class="col-md-4 grayscale">
+				<img src="assets/images/chicago-sign-3-wide.jpg" alt="chicago no parking sign"/>
+			</div>
+		</section>
 
-		<h2>What are my odds for appealing?</h2>
-		<p>Your odds are great! Only 9% of tickets issued in the 25th ward between Jan. 1, 2013 and Dec. 31, 2017 were contested. However, 3 out of 5 of those appeals resulted in the ticket being thrown out!</p>
-		<p>There is no fee to request an administrative hearing, and no penalty if you lose. Once you request a hearing, you will receive a week during which to appear at a hearing facility. You can go anytime during that week, based on your availability.</p>
-		<p>Our site contains information to help you understand the appeal process, prepare your case, and contest your ticket confidently. Go to our <a href="defenses.html">allowable defenses</a> page to learn how you can defend yourself. Use our <a href="prepare.html">preparation</a> page to build your case and prepare your evidence. You can also view a list of other helpful sites in our <a href="resources.html">resources</a></p>
+		<!-- statistics to encourage appealing -->
+		<section id="what-are-odds" class="row py-5">
+			<div class="col-md-4">
+				<img src="assets/images/ward-25-boundary-color.png" alt="25th ward boundary map"/>
+			</div>
+			<div class="col-md-8">
+				<h2>What are my odds for appealing?</h2>
+				<p>Only 9% of tickets issued in the 25th ward between Jan. 1, 2013 and Dec. 31, 2017 were contested. Of those, <strong>3 out of 5</strong> resulted in the ticket being thrown out!</p>
+				<p>There is <strong>no fee</strong> to request an administrative hearing, and <strong>no penalty</strong> if you lose. Once you request a hearing, you will receive a week during which to appear at a hearing facility. You can go anytime during that week, based on your availability.</p>
+				<p>Our site contains information to help you understand the appeal process, prepare your case, and contest your ticket confidently. Go to our <a href="defenses.html">allowable defenses</a> page to learn how you can defend yourself. Use our <a href="prepare.html">preparation</a> page to build your case and prepare your evidence. You can also view a list of other helpful sites in our <a href="resources.html">resources</a></p>
+			</div>
+				<!-- <img src="assets/images/ward-25-boundary-color.png" alt="map of the 25th ward boundaries"> -->
+		</section>
 
-		<h2>How do I fight my ticket?</h2>
-		<ol>
-			<li><a href="defenses.html">See if you have a valid defense</a></li>
-			<li><a href="defenses.html">See if you have the necessary evidence</a></li>
-			<li><a href="preparation.html">Prepare your defense</a></li>
-		</ol>
+		<!-- steps for fighting ticket -->
+		<section id="how-to-fight" class="row">
+			<h2>How do I fight my ticket?</h2>
+			<ol>
+				<li><a href="defenses.html">See if you have a valid defense</a></li>
+				<li><a href="defenses.html">See if you have the necessary evidence</a></li>
+				<li><a href="preparation.html">Prepare your defense</a></li>
+			</ol>
+		</section>
 	</main>
 
 	<!-- footer -->
@@ -70,7 +93,7 @@
 			<div class="row justify-content-center">
 				<!-- logo -->
 				<section id="logo" class="col-md-2">
-					<h5 class="hidden">logo</h5>
+					<h3 class="hidden">logo</h3>
 					<a href="index.html">
 						<img src="./assets/images/logo-white.png" alt="hand holding pencil logo" />
 					</a>
@@ -78,7 +101,7 @@
 
 				<!-- site links -->
 				<section id="site-pages" class="col-md-3">
-					<h5>Site links</h5>
+					<h3>Site links</h3>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="defenses.html">Allowed Defenses</a></li>
@@ -89,21 +112,20 @@
 
 				<!-- resource links -->
 				<section id="resources" class="col-md-3">
-					<h5>Resources</h5>
+					<h3>Resources</h3>
 					<ul>
 						<li><a href="https://projects.propublica.org/chicago-tickets/">ProPublica</a></li>
 						<li><a href="https://gisapps.chicago.gov/WardGeocode/">Ward Lookup</a></li>
-						<li><a href="https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2488738">American Legal - City Code</a></li>
-						<li><a href="https://www.chicago.gov/city/en/depts/fin/provdrs/parking_and_redlightcitationadministration/svcs/view_automated_speedenforcementvideo1.html">City of Chicago - Request a Hearing</a></li>
-						<li><a href="#">Link 5</a></li>
+						<li><a href="https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2488738">Municipal Code</a></li>
+						<li><a href="https://www.chicago.gov/city/en/depts/fin/provdrs/parking_and_redlightcitationadministration/svcs/view_automated_speedenforcementvideo1.html">Request a Hearing</a></li>
 					</ul>
 				</section>
 			</div>
 			<div class="row">
 				<!-- copyright -->
 				<section id="copyright" class="col-md-12">
-					<h5 class="hidden">copyright</h5>
-					<p>&copy; 2020 <a href="index.html">Take It to the Streets</a></p>
+					<h3 class="hidden">copyright</h3>
+					<p>&copy; 2020 &middot; <a href="index.html">Take It to the Streets</a> &middot; <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1300596">Logo</a></p>
 				</section>
 			</div>
 		</div>

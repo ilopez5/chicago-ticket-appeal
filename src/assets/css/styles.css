@@ -2,7 +2,7 @@
 :root {
 	/* logo colors */
 	--viridian-green: #119DA4;
-	--solid-pink: #8E3B46;
+	--solid-pink: #6b131e;
 	--rich-black: #080B0D;
 	--gunmetal: #1F2D33;
 	--honeydew: #F1FAEE;
@@ -27,7 +27,7 @@ nav a img {
 	width: 50px;
 }
 
-/* footer styling */
+/* general footer styling */
 footer {
 	position: relative;
 	width: 100%;
@@ -51,7 +51,7 @@ footer img {
 footer section#copyright {
 	text-align: center;
 }
-footer h5 {
+footer h3 {
 	color: var(--black-shadows);
 }
 footer a {
@@ -67,8 +67,39 @@ footer section ul {
 }
 
 /* color */
-/* font */
+a {
+	color: var(--solid-pink)
+}
+a:hover {
+	color: #a04c56;
+}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+}
+h2 {
+	font-size: 2.1rem;
+}
+ol, ul, a, p {
+	font-family: 'Lora', serif;
+	font-size: 1.2rem;
+}
+nav a,
+nav p,
+footer a,
+footer p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1rem;
+}
+
 /* spacing */
+h2 {
+	padding-bottom: 15px;
+}
+section ol {
+	margin-left: 40px;
+}
 
 /* accessibility */
 .hidden {
@@ -95,4 +126,22 @@ footer section ul {
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+/* index.html */
+div.grayscale {
+	position: relative;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	background-color: white;
+	padding-top: 10px;
+	text-align: right;
+}
+div.grayscale img {
+	width: 300px;
+}
+
+/* defenses.html */
+section#parking-tickets > ul > li {
+	padding-bottom: 20px;
 }
